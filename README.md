@@ -1,2 +1,2 @@
 # weather-webapp
-Basic weather webapp for the Nodejs Udemy course.
+Basic weather webapp using Express for the Nodejs Udemy course.
