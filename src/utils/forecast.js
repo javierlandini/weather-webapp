@@ -14,7 +14,7 @@ const forecast = (lat, long, callback) => {
             callback('There has been an error in the forecast API response: ' + body.error.info);
             return;
         }
-        const msg = body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degress out. And it feels like " + body.current.feelslike + " degress.";
+        const msg = body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degress out. And it feels like " + body.current.feelslike + " degress. The humidity is " + body.current.humidity + "%.";
         callback(undefined, msg);
     })    
 }
